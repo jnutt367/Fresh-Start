@@ -12,7 +12,8 @@
         background-image: url('img/Man-arms-wide-open-ocean.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 400px;
+        height: 500px;
+        object-fit: contain;
     }
     
     ul {
@@ -24,19 +25,27 @@
     h1 {
         text-align: center;
     }
+    
+    @media (max-width: 600px) {
+        body {
+            background-color: lightblue;
+        }
+        header {
+            background-image: url('img/pexels-photo-prayer.jpeg');
+            height: 500px;
+            width: 100%;
+        }
+    }
 </style>
 
 <body>
     <header>
         <ul>
-            <img style="border-radius: 50%;" src="img/fresh-logo.jpg">
+            <img style="border-radius: 50%; height: 50px; width: 50px;" src="img/fresh-logo.jpg">
             <li>HOME</li>
             <li>THE PROGRAM</li>
             <li>ADMISSIONS</li>
             <li>BLOG</li>
-            <li>NEWSLETTER</li>
-            <li>DONATE</li>
-            <li>CONTACT</li>
         </ul>
     </header>
     <main>
